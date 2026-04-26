@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#030303] text-white">
-    <header class="max-w-300 m-auto p-5 lg:px-0 justify-between items-center flex text-white">
+    <header class="max-w-300 m-auto p-5 lg:px-0 relative justify-between items-center flex text-white">
         <img src="./img/pg1/header/logo.png" alt="">
-        <i class="lg:hidden! text-white text-2xl fa-solid fa-bars"></i>
+        <details class="lg:hidden cursor-pointer text-3xl group font-bold">
+            <summary class="list-none">
+                <span class="group-open:hidden">☰</span>
+                <span class="group-open:block hidden">X</span>
+            </summary>
+            <nav class="flex flex-col gap-5 group-open:translate-y-15 transition duration-300 absolute bg-black w-[90%] rounded-3xl items-center p-5 left-5 top-15 ">
+                <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="../index.html">Home</a>
+                <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="./page2.html">Services</a>
+                <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="./page3.html">Careers</a>
+                <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="#">Career Details</a>
+                <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="./page5.html">Contact</a>
+            </nav>
+        </details>
+
         <nav class="hidden lg:flex gap-10 items-center">
             <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="../index.html">Home</a>
             <a class="transition-all ease hover:text-[18px] text-[16px] duration-300 hover:duration-300 hover:py-2 hover:px-5 hover:rounded-2xl text-white hover:bg-white hover:text-black" href="./page2.html">Services</a>
